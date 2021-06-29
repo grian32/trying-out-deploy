@@ -2,14 +2,21 @@ import { router } from "https://crux.land/router@0.0.3";
 import React, { h } from "https://x.lcas.dev/preact@10.5.12/mod.js";
 import { renderToString } from "https://x.lcas.dev/preact@10.5.12/ssr.js";
 
+/* contains title, meta, etc */
+function Head() {
+    return (
+        <head>
+            <title>
+                Playing with Deno!
+            </title>
+        </head>
+    );
+}
+
 function App() {
     return (
         <html>
-            <head>
-                <title>
-                    Hi!!
-                </title>
-            </head>
+            <Head/>
             <body>
                 Hello there, General Kenobi!
             </body>
