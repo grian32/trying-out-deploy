@@ -1,18 +1,7 @@
 import { router } from "https://crux.land/router@0.0.3";
 import React, { h } from "https://x.lcas.dev/preact@10.5.12/mod.js";
 import { renderToString } from "https://x.lcas.dev/preact@10.5.12/ssr.js";
-import { Head } from "./head.tsx";
-
-function App() {
-    return (
-        <html>
-            <Head/>
-            <body>
-                Hello there, General Kenobi!
-            </body>
-        </html>
-    )
-}
+import App from "./components/App.tsx"
 
 
 addEventListener("fetch", (event: FetchEvent) => {
