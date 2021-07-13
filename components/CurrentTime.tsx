@@ -6,6 +6,6 @@ export default function CurrentTime() {
     let date = new Date()
 
     return (
-        <p id="parsedDate"> { format(date, "h:mm:ss")}</p>
+        <p id="parsedDate"> { format(date, "h:mm:ss") } UTC </p>
     )
 }
