@@ -9,7 +9,7 @@ export default function App() {
             <body>
                 <p> Hi! </p>
 
-                <p>The current time is: </p>
+                <p>You loaded this page at: </p>
                 <CurrentTime />
             </body>
         </html>

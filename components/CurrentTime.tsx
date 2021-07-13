@@ -3,15 +3,7 @@ import { format } from "https://deno.land/std@0.101.0/datetime/mod.ts";
 import { useState, useEffect } from "https://x.lcas.dev/preact@10.5.12/hooks.js";
 
 export default function CurrentTime() {
-    let [date, setDate] = useState(new Date());
-    useEffect(() => {
-        setInterval(() => {
-            let newDate = new Date();
-            if (date <= newDate) {
-                setDate(newDate);
-            }
-        }, 1000)
-    })
+    let date = new Date()
 
     return (
         <p id="parsedDate"> { format(date, "h:mm:ss")}</p>
